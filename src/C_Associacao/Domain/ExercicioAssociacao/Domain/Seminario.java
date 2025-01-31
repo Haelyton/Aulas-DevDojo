@@ -6,18 +6,21 @@ public class Seminario {
     private Aluno[] alunos;
     private Local local;
 
+    public Seminario(final String comoSerUmPirata, final Aluno[] alunos, final Local local) {
+    }
+
     public Local getLocal() {
         return local;
     }
 
-    public void setLocal(final Local local) {
+    public Seminario(final String titulo, Local local) {
+
+        this.titulo = titulo;
         this.local = local;
     }
 
-    public Seminario(final String titulo, final Aluno[] alunos, final Local local) {
-        this.alunos = alunos;
+    public void setLocal(final Local local) {
         this.local = local;
-        this.titulo = titulo;
     }
 
     public Seminario(final Aluno[] alunos, final String titulo) {
@@ -31,10 +34,6 @@ public class Seminario {
 
     public Aluno[] getAlunos() {
         return alunos;
-    }
-
-    public Seminario(final String titulo) {
-        this.titulo = titulo;
     }
 
     public String getTitulo() {
