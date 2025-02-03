@@ -10,6 +10,10 @@ public class Pessoa {
     protected String cpf;
     protected Endereco endereco;
 
+    public Pessoa(String nome) {
+        this.nome = nome;
+    }
+
     public void imprimi() {
         System.out.println(this.nome);
         System.out.println(this.cpf);
