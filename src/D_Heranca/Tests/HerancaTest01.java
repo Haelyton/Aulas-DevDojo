@@ -17,7 +17,7 @@ public class HerancaTest01 {
         pessoa.imprimi();
 
         System.out.println("====================================");
-        Funcionario funcionario = new Funcionario("Oda");
+        Funcionario funcionario = new Funcionario("Abobra");
         funcionario.setCpf("987.654.321-00");
         funcionario.setEndereco(endereco);
         funcionario.setSalario(2000);
